@@ -1,0 +1,303 @@
+{
+ "name": "SPARK",
+ "full_name": "SPARK  /  UNIT SP-01",
+ "title": "SPARRING DROID",
+ "bio": "Mass-produced training unit. Balanced, polite and relentlessly by-the-book.",
+ "health": 900,
+ "walk_fwd": 2.1,
+ "walk_back": 1.7,
+ "jump_velocity": 8.2,
+ "jump_x": 2.6,
+ "gravity": 0.44,
+ "weight": 1.0,
+ "color": "#ff9a34",
+ "attacks": {
+  "lp": {
+   "startup": 4,
+   "active": 3,
+   "recovery": 8,
+   "damage": 28,
+   "hitstun": 14,
+   "blockstun": 9,
+   "knockback": 2.2,
+   "cancel": [
+    "lp",
+    "hp",
+    "lk",
+    "c_lp",
+    "c_lk",
+    "special",
+    "super"
+   ],
+   "sfx": "punch_l"
+  },
+  "hp": {
+   "startup": 7,
+   "active": 4,
+   "recovery": 16,
+   "damage": 70,
+   "hitstun": 17,
+   "blockstun": 11,
+   "knockback": 4.0,
+   "strength": "heavy",
+   "cancel": [
+    "special",
+    "super"
+   ],
+   "sfx": "punch_h"
+  },
+  "lk": {
+   "startup": 5,
+   "active": 3,
+   "recovery": 11,
+   "damage": 38,
+   "hitstun": 15,
+   "blockstun": 10,
+   "knockback": 2.6,
+   "cancel": [
+    "hk",
+    "hp",
+    "special",
+    "super"
+   ],
+   "sfx": "kick_l"
+  },
+  "hk": {
+   "startup": 9,
+   "active": 4,
+   "recovery": 19,
+   "damage": 80,
+   "hitstun": 18,
+   "blockstun": 12,
+   "knockback": 4.5,
+   "strength": "heavy",
+   "sfx": "kick_h"
+  },
+  "c_lp": {
+   "startup": 4,
+   "active": 3,
+   "recovery": 8,
+   "damage": 24,
+   "hitstun": 14,
+   "blockstun": 9,
+   "cancel": [
+    "c_lk",
+    "c_lp",
+    "lp",
+    "special",
+    "super"
+   ],
+   "sfx": "punch_l"
+  },
+  "c_hp": {
+   "startup": 6,
+   "active": 5,
+   "recovery": 19,
+   "damage": 65,
+   "hitstun": 17,
+   "blockstun": 11,
+   "strength": "heavy",
+   "cancel": [
+    "special",
+    "super"
+   ],
+   "sfx": "punch_h",
+   "launch": [
+    1.5,
+    -6.0
+   ]
+  },
+  "c_lk": {
+   "startup": 5,
+   "active": 3,
+   "recovery": 10,
+   "damage": 24,
+   "hitstun": 14,
+   "blockstun": 9,
+   "level": "low",
+   "cancel": [
+    "c_lk",
+    "c_lp",
+    "lp",
+    "special",
+    "super"
+   ],
+   "sfx": "kick_l"
+  },
+  "c_hk": {
+   "startup": 8,
+   "active": 4,
+   "recovery": 23,
+   "damage": 55,
+   "hitstun": 16,
+   "blockstun": 11,
+   "level": "low",
+   "knockdown": true,
+   "launch": [
+    1.5,
+    -3.5
+   ],
+   "strength": "heavy",
+   "sfx": "kick_h"
+  },
+  "j_p": {
+   "startup": 5,
+   "active": 6,
+   "recovery": 4,
+   "damage": 50,
+   "hitstun": 16,
+   "blockstun": 10,
+   "level": "overhead",
+   "sfx": "punch_h"
+  },
+  "j_k": {
+   "startup": 5,
+   "active": 8,
+   "recovery": 4,
+   "damage": 60,
+   "hitstun": 16,
+   "blockstun": 11,
+   "level": "overhead",
+   "sfx": "kick_h"
+  },
+  "sp_dash": {
+   "startup": 12,
+   "active": 10,
+   "recovery": 20,
+   "damage": 90,
+   "hitstun": 19,
+   "blockstun": 13,
+   "chip": 10,
+   "special": true,
+   "strength": "heavy",
+   "knockdown": true,
+   "launch": [
+    4,
+    -4
+   ],
+   "move": [
+    [
+     8,
+     22,
+     6.0
+    ]
+   ],
+   "hitstop": 11,
+   "shake": 4,
+   "sfx": "metal_h",
+   "name": "SPARK DASH"
+  },
+  "sp_shot": {
+   "startup": 12,
+   "active": 2,
+   "recovery": 28,
+   "damage": 60,
+   "hitstun": 18,
+   "blockstun": 11,
+   "chip": 10,
+   "special": true,
+   "anim_active": [
+    1,
+    2
+   ],
+   "no_hitbox": true,
+   "projectile": {
+    "kind": "pellet",
+    "speed": 3.2,
+    "w": 14,
+    "h": 10,
+    "x": 34,
+    "y": -62,
+    "color": "#ff9a34",
+    "sfx": "zap"
+   },
+   "sfx": "zap",
+   "name": "ION PELLET"
+  }
+ },
+ "specials": [
+  {
+   "attack": "sp_dash",
+   "motion": "FF",
+   "button": "hp"
+  },
+  {
+   "attack": "sp_shot",
+   "motion": "QCF",
+   "button": "lp"
+  }
+ ],
+ "ai": {
+  "reaction": 22,
+  "aggression": 0.45,
+  "range": 64,
+  "block": 0.35,
+  "anti_air": 0.25,
+  "punish": 0.25,
+  "jump": 0.08,
+  "special": 0.2,
+  "combo": 0.3,
+  "retreat": 0.15,
+  "pause": 20,
+  "close": [
+   [
+    "lp",
+    3
+   ],
+   [
+    "lk",
+    2
+   ],
+   [
+    "c_lk",
+    2
+   ],
+   [
+    "hp",
+    1
+   ]
+  ],
+  "mid": [
+   [
+    "hk",
+    2
+   ],
+   [
+    "lk",
+    2
+   ],
+   [
+    "sp_dash",
+    1
+   ]
+  ],
+  "far_specials": [
+   "sp_shot"
+  ],
+  "anti_air_moves": [
+   "c_hp"
+  ],
+  "punish_moves": [
+   "hp",
+   "sp_dash",
+   "hk"
+  ],
+  "combos": {
+   "lp": [
+    "lp",
+    "hp"
+   ],
+   "c_lk": [
+    "c_lk",
+    "sp_dash"
+   ]
+  },
+  "jump_attack": "j_k"
+ },
+ "normals": {
+  "j_lp": "j_p",
+  "j_hp": "j_p",
+  "j_lk": "j_k",
+  "j_hk": "j_k"
+ }
+}

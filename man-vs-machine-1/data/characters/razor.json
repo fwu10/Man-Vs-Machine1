@@ -1,0 +1,297 @@
+{
+ "name": "RAZOR",
+ "full_name": "RAZOR  /  DUELIST R-0",
+ "title": "BLADE COUNTER-FIGHTER",
+ "bio": "Trained on ten thousand recorded duels. It waits for your mistake - and it never misses one.",
+ "health": 950,
+ "walk_fwd": 2.3,
+ "walk_back": 2.0,
+ "jump_velocity": 8.3,
+ "jump_x": 2.7,
+ "gravity": 0.45,
+ "weight": 1.0,
+ "color": "#ff4040",
+ "attacks": {
+  "lp": {
+   "startup": 4,
+   "active": 3,
+   "recovery": 9,
+   "damage": 32,
+   "hitstun": 14,
+   "blockstun": 9,
+   "knockback": 2.2,
+   "cancel": [
+    "lp",
+    "hp",
+    "special"
+   ],
+   "sfx": "slash_l"
+  },
+  "hp": {
+   "startup": 8,
+   "active": 4,
+   "recovery": 18,
+   "damage": 85,
+   "hitstun": 19,
+   "blockstun": 12,
+   "knockback": 4.0,
+   "strength": "heavy",
+   "sfx": "slash",
+   "cancel": [
+    "special",
+    "super"
+   ]
+  },
+  "lk": {
+   "startup": 5,
+   "active": 3,
+   "recovery": 11,
+   "damage": 40,
+   "hitstun": 15,
+   "blockstun": 10,
+   "knockback": 2.6,
+   "sfx": "kick_l",
+   "cancel": [
+    "special"
+   ]
+  },
+  "hk": {
+   "startup": 9,
+   "active": 4,
+   "recovery": 18,
+   "damage": 85,
+   "hitstun": 19,
+   "blockstun": 12,
+   "knockback": 4.5,
+   "strength": "heavy",
+   "sfx": "kick_h"
+  },
+  "c_lp": {
+   "startup": 4,
+   "active": 3,
+   "recovery": 9,
+   "damage": 28,
+   "hitstun": 14,
+   "blockstun": 9,
+   "cancel": [
+    "c_lk",
+    "c_lp",
+    "lp",
+    "special",
+    "super"
+   ],
+   "sfx": "slash_l"
+  },
+  "c_hp": {
+   "startup": 6,
+   "active": 5,
+   "recovery": 18,
+   "damage": 75,
+   "hitstun": 18,
+   "blockstun": 12,
+   "strength": "heavy",
+   "sfx": "slash",
+   "launch": [
+    1.5,
+    -6
+   ]
+  },
+  "c_lk": {
+   "startup": 5,
+   "active": 3,
+   "recovery": 10,
+   "damage": 30,
+   "hitstun": 14,
+   "blockstun": 9,
+   "level": "low",
+   "cancel": [
+    "c_lk",
+    "c_lp",
+    "lp",
+    "special",
+    "super"
+   ],
+   "sfx": "kick_l"
+  },
+  "c_hk": {
+   "startup": 8,
+   "active": 4,
+   "recovery": 22,
+   "damage": 65,
+   "hitstun": 17,
+   "blockstun": 11,
+   "level": "low",
+   "knockdown": true,
+   "launch": [
+    1.5,
+    -3.5
+   ],
+   "strength": "heavy",
+   "sfx": "kick_h"
+  },
+  "j_p": {
+   "startup": 5,
+   "active": 6,
+   "recovery": 4,
+   "damage": 60,
+   "hitstun": 16,
+   "blockstun": 11,
+   "level": "overhead",
+   "sfx": "slash"
+  },
+  "j_k": {
+   "startup": 5,
+   "active": 7,
+   "recovery": 4,
+   "damage": 60,
+   "hitstun": 16,
+   "blockstun": 11,
+   "level": "overhead",
+   "sfx": "kick_h"
+  },
+  "sp_lunge": {
+   "startup": 11,
+   "active": 6,
+   "recovery": 22,
+   "damage": 100,
+   "hitstun": 20,
+   "blockstun": 13,
+   "chip": 12,
+   "special": true,
+   "strength": "heavy",
+   "knockdown": true,
+   "launch": [
+    4,
+    -4
+   ],
+   "move": [
+    [
+     6,
+     16,
+     5.5
+    ]
+   ],
+   "hitstop": 12,
+   "shake": 4,
+   "sfx": "slash",
+   "name": "EDGE LUNGE"
+  },
+  "sp_parry": {
+   "startup": 3,
+   "active": 26,
+   "recovery": 16,
+   "damage": 0,
+   "hitstun": 12,
+   "blockstun": 8,
+   "special": true,
+   "counter": true,
+   "counter_attack": "sp_counter",
+   "no_hitbox": true,
+   "name": "BLADE PARRY"
+  },
+  "sp_counter": {
+   "startup": 3,
+   "active": 5,
+   "recovery": 18,
+   "damage": 120,
+   "hitstun": 22,
+   "blockstun": 14,
+   "special": true,
+   "strength": "heavy",
+   "knockdown": true,
+   "launch": [
+    4,
+    -5
+   ],
+   "hitstop": 16,
+   "shake": 6,
+   "sfx": "slash",
+   "name": "COUNTER EDGE"
+  }
+ },
+ "specials": [
+  {
+   "attack": "sp_lunge",
+   "motion": "FF",
+   "button": "hp"
+  },
+  {
+   "attack": "sp_parry",
+   "motion": "QCB",
+   "button": "hp"
+  }
+ ],
+ "ai": {
+  "reaction": 12,
+  "aggression": 0.4,
+  "range": 84,
+  "block": 0.6,
+  "anti_air": 0.45,
+  "punish": 0.75,
+  "parry": 0.4,
+  "parry_move": "sp_parry",
+  "jump": 0.06,
+  "special": 0.2,
+  "combo": 0.45,
+  "retreat": 0.4,
+  "pause": 16,
+  "close": [
+   [
+    "lp",
+    2
+   ],
+   [
+    "c_lk",
+    2
+   ],
+   [
+    "hp",
+    1
+   ]
+  ],
+  "mid": [
+   [
+    "lp",
+    3
+   ],
+   [
+    "hk",
+    1
+   ],
+   [
+    "c_hk",
+    1
+   ],
+   [
+    "sp_lunge",
+    1
+   ]
+  ],
+  "far_specials": [],
+  "anti_air_moves": [
+   "c_hp"
+  ],
+  "punish_moves": [
+   "sp_lunge",
+   "hp",
+   "lp"
+  ],
+  "combos": {
+   "lp": [
+    "lp",
+    "sp_lunge"
+   ],
+   "c_lk": [
+    "c_lp",
+    "sp_lunge"
+   ]
+  },
+  "jump_attack": "j_p"
+ },
+ "normals": {
+  "j_lp": "j_p",
+  "j_hp": "j_p",
+  "j_lk": "j_k",
+  "j_hk": "j_k"
+ }
+}

@@ -1,0 +1,287 @@
+{
+ "name": "BULWARK",
+ "full_name": "BULWARK  /  SIEGE FRAME B-9",
+ "title": "DEMOLITION HEAVYWEIGHT",
+ "bio": "A walking breach-charge. Absorbs punishment and answers with tons of hydraulic force.",
+ "health": 1300,
+ "walk_fwd": 1.3,
+ "walk_back": 1.0,
+ "jump_velocity": 7.2,
+ "jump_x": 2.0,
+ "gravity": 0.46,
+ "weight": 1.6,
+ "color": "#f8d24a",
+ "attacks": {
+  "lp": {
+   "startup": 5,
+   "active": 3,
+   "recovery": 10,
+   "damage": 45,
+   "hitstun": 15,
+   "blockstun": 10,
+   "knockback": 3.0,
+   "cancel": [
+    "hp",
+    "lp",
+    "special"
+   ],
+   "sfx": "punch_l"
+  },
+  "hp": {
+   "startup": 14,
+   "active": 4,
+   "recovery": 26,
+   "damage": 140,
+   "hitstun": 23,
+   "blockstun": 15,
+   "knockback": 6.0,
+   "strength": "heavy",
+   "armor": 10,
+   "hitstop": 14,
+   "shake": 6,
+   "sfx": "slam",
+   "cancel": [
+    "special",
+    "super"
+   ]
+  },
+  "lk": {
+   "startup": 7,
+   "active": 3,
+   "recovery": 14,
+   "damage": 55,
+   "hitstun": 16,
+   "blockstun": 11,
+   "knockback": 3.5,
+   "sfx": "kick_l",
+   "cancel": [
+    "special"
+   ]
+  },
+  "hk": {
+   "startup": 12,
+   "active": 4,
+   "recovery": 24,
+   "damage": 120,
+   "hitstun": 22,
+   "blockstun": 14,
+   "knockback": 7.0,
+   "strength": "heavy",
+   "hitstop": 13,
+   "shake": 5,
+   "sfx": "kick_h"
+  },
+  "c_lp": {
+   "startup": 5,
+   "active": 3,
+   "recovery": 10,
+   "damage": 40,
+   "hitstun": 15,
+   "blockstun": 10,
+   "cancel": [
+    "c_lp",
+    "special"
+   ],
+   "sfx": "punch_l"
+  },
+  "c_hp": {
+   "startup": 9,
+   "active": 5,
+   "recovery": 24,
+   "damage": 110,
+   "hitstun": 21,
+   "blockstun": 14,
+   "strength": "heavy",
+   "sfx": "punch_h",
+   "launch": [
+    2,
+    -6
+   ]
+  },
+  "c_lk": {
+   "startup": 7,
+   "active": 3,
+   "recovery": 14,
+   "damage": 45,
+   "hitstun": 15,
+   "blockstun": 10,
+   "level": "low",
+   "sfx": "kick_l",
+   "cancel": [
+    "special"
+   ]
+  },
+  "c_hk": {
+   "startup": 12,
+   "active": 4,
+   "recovery": 28,
+   "damage": 90,
+   "hitstun": 19,
+   "blockstun": 13,
+   "level": "low",
+   "knockdown": true,
+   "launch": [
+    2.5,
+    -3.5
+   ],
+   "strength": "heavy",
+   "sfx": "kick_h"
+  },
+  "j_p": {
+   "startup": 7,
+   "active": 6,
+   "recovery": 6,
+   "damage": 110,
+   "hitstun": 18,
+   "blockstun": 14,
+   "level": "overhead",
+   "strength": "heavy",
+   "sfx": "slam"
+  },
+  "j_k": {
+   "startup": 6,
+   "active": 8,
+   "recovery": 6,
+   "damage": 100,
+   "hitstun": 18,
+   "blockstun": 13,
+   "level": "overhead",
+   "strength": "heavy",
+   "sfx": "kick_h"
+  },
+  "sp_hammer": {
+   "startup": 20,
+   "active": 4,
+   "recovery": 32,
+   "damage": 180,
+   "hitstun": 27,
+   "blockstun": 18,
+   "chip": 25,
+   "special": true,
+   "armor": 18,
+   "strength": "heavy",
+   "knockdown": true,
+   "level": "overhead",
+   "launch": [
+    5,
+    -5
+   ],
+   "hitstop": 16,
+   "shake": 9,
+   "sfx": "slam",
+   "name": "SIEGE HAMMER"
+  },
+  "sp_stomp": {
+   "startup": 22,
+   "active": 2,
+   "recovery": 30,
+   "damage": 80,
+   "hitstun": 24,
+   "blockstun": 12,
+   "chip": 12,
+   "special": true,
+   "level": "low",
+   "can_hit_air": false,
+   "anim_active": [
+    2,
+    3
+   ],
+   "no_hitbox": true,
+   "shake": 4,
+   "projectile": {
+    "kind": "wave",
+    "speed": 4.0,
+    "w": 30,
+    "h": 18,
+    "x": 34,
+    "y": -9,
+    "life": 120,
+    "color": "#f8d24a",
+    "sfx": "slam"
+   },
+   "sfx": "slam",
+   "name": "QUAKE STOMP"
+  }
+ },
+ "specials": [
+  {
+   "attack": "sp_hammer",
+   "motion": "FF",
+   "button": "hp"
+  },
+  {
+   "attack": "sp_stomp",
+   "motion": "QCF",
+   "button": "hk"
+  }
+ ],
+ "ai": {
+  "reaction": 20,
+  "aggression": 0.3,
+  "range": 80,
+  "block": 0.55,
+  "anti_air": 0.35,
+  "punish": 0.6,
+  "jump": 0.03,
+  "special": 0.15,
+  "combo": 0.3,
+  "retreat": 0.05,
+  "armor": 0.35,
+  "armor_move": "sp_hammer",
+  "pause": 30,
+  "close": [
+   [
+    "lp",
+    2
+   ],
+   [
+    "hp",
+    2
+   ],
+   [
+    "c_hk",
+    1
+   ]
+  ],
+  "mid": [
+   [
+    "hk",
+    2
+   ],
+   [
+    "sp_hammer",
+    1
+   ],
+   [
+    "lk",
+    1
+   ]
+  ],
+  "far_specials": [
+   "sp_stomp"
+  ],
+  "anti_air_moves": [
+   "c_hp"
+  ],
+  "punish_moves": [
+   "hp",
+   "hk",
+   "sp_hammer"
+  ],
+  "combos": {
+   "lp": [
+    "hp"
+   ],
+   "c_lp": [
+    "sp_hammer"
+   ]
+  },
+  "jump_attack": "j_p"
+ },
+ "normals": {
+  "j_lp": "j_p",
+  "j_hp": "j_p",
+  "j_lk": "j_k",
+  "j_hk": "j_k"
+ }
+}
