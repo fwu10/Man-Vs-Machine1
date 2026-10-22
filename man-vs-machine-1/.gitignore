@@ -1,3 +1,7 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# dev-only previews from tools/
+tools/preview/
+tools/__pycache__/

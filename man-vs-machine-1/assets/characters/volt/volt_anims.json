@@ -1,0 +1,303 @@
+{
+ "id": "volt",
+ "frame_w": 148,
+ "frame_h": 120,
+ "origin_x": 74,
+ "origin_y": 112,
+ "columns": 6,
+ "rows": 28,
+ "anims": {
+  "idle": {
+   "row": 0,
+   "frames": 4,
+   "fps": 7,
+   "loop": true
+  },
+  "walk_fwd": {
+   "row": 1,
+   "frames": 6,
+   "fps": 10,
+   "loop": true
+  },
+  "walk_back": {
+   "row": 2,
+   "frames": 6,
+   "fps": 9,
+   "loop": true
+  },
+  "crouch": {
+   "row": 3,
+   "frames": 2,
+   "fps": 15,
+   "loop": false
+  },
+  "jump": {
+   "row": 4,
+   "frames": 3,
+   "fps": 8,
+   "loop": false
+  },
+  "land": {
+   "row": 5,
+   "frames": 1,
+   "fps": 10,
+   "loop": false
+  },
+  "block": {
+   "row": 6,
+   "frames": 1,
+   "fps": 1,
+   "loop": false
+  },
+  "block_crouch": {
+   "row": 7,
+   "frames": 1,
+   "fps": 1,
+   "loop": false
+  },
+  "hit_light": {
+   "row": 8,
+   "frames": 2,
+   "fps": 10,
+   "loop": false
+  },
+  "hit_heavy": {
+   "row": 9,
+   "frames": 2,
+   "fps": 8,
+   "loop": false
+  },
+  "hit_crouch": {
+   "row": 10,
+   "frames": 2,
+   "fps": 10,
+   "loop": false
+  },
+  "knockdown": {
+   "row": 11,
+   "frames": 4,
+   "fps": 8,
+   "loop": false
+  },
+  "getup": {
+   "row": 12,
+   "frames": 3,
+   "fps": 8,
+   "loop": false
+  },
+  "victory": {
+   "row": 13,
+   "frames": 4,
+   "fps": 6,
+   "loop": true
+  },
+  "defeat": {
+   "row": 14,
+   "frames": 2,
+   "fps": 3,
+   "loop": true
+  },
+  "intro": {
+   "row": 15,
+   "frames": 4,
+   "fps": 6,
+   "loop": false
+  },
+  "lp": {
+   "row": 16,
+   "frames": 3,
+   "fps": 24,
+   "loop": false,
+   "hitbox": [
+    46,
+    -73,
+    16,
+    16
+   ],
+   "active_frames": [
+    1
+   ]
+  },
+  "hp": {
+   "row": 17,
+   "frames": 4,
+   "fps": 18,
+   "loop": false,
+   "hitbox": [
+    45,
+    -72,
+    18,
+    18
+   ],
+   "active_frames": [
+    1
+   ]
+  },
+  "lk": {
+   "row": 18,
+   "frames": 3,
+   "fps": 20,
+   "loop": false,
+   "hitbox": [
+    42,
+    -48,
+    16,
+    16
+   ],
+   "active_frames": [
+    1
+   ]
+  },
+  "hk": {
+   "row": 19,
+   "frames": 4,
+   "fps": 15,
+   "loop": false,
+   "hitbox": [
+    29,
+    -83,
+    21,
+    21
+   ],
+   "active_frames": [
+    1,
+    2
+   ]
+  },
+  "c_lp": {
+   "row": 20,
+   "frames": 3,
+   "fps": 24,
+   "loop": false,
+   "hitbox": [
+    44,
+    -52,
+    16,
+    16
+   ],
+   "active_frames": [
+    1
+   ]
+  },
+  "c_hp": {
+   "row": 21,
+   "frames": 4,
+   "fps": 16,
+   "loop": false,
+   "hitbox": [
+    3,
+    -105,
+    22,
+    23
+   ],
+   "active_frames": [
+    1,
+    2
+   ]
+  },
+  "c_lk": {
+   "row": 22,
+   "frames": 3,
+   "fps": 22,
+   "loop": false,
+   "hitbox": [
+    41,
+    -12,
+    14,
+    14
+   ],
+   "active_frames": [
+    1
+   ]
+  },
+  "c_hk": {
+   "row": 23,
+   "frames": 4,
+   "fps": 14,
+   "loop": false,
+   "hitbox": [
+    38,
+    -14,
+    18,
+    18
+   ],
+   "active_frames": [
+    1,
+    2
+   ]
+  },
+  "j_p": {
+   "row": 24,
+   "frames": 3,
+   "fps": 16,
+   "loop": false,
+   "hitbox": [
+    35,
+    -55,
+    20,
+    20
+   ],
+   "active_frames": [
+    1
+   ]
+  },
+  "j_k": {
+   "row": 25,
+   "frames": 3,
+   "fps": 16,
+   "loop": false,
+   "hitbox": [
+    35,
+    -31,
+    20,
+    20
+   ],
+   "active_frames": [
+    1
+   ]
+  },
+  "sp_bolt": {
+   "row": 26,
+   "frames": 5,
+   "fps": 12,
+   "loop": false
+  },
+  "sp_rush": {
+   "row": 27,
+   "frames": 6,
+   "fps": 14,
+   "loop": false,
+   "hitbox": [
+    25,
+    -71,
+    34,
+    29
+   ],
+   "active_frames": [
+    1,
+    2,
+    3,
+    4
+   ]
+  }
+ },
+ "hurt_stand": [
+  -4,
+  -95,
+  24,
+  95
+ ],
+ "hurt_crouch": [
+  -4,
+  -78,
+  24,
+  78
+ ],
+ "hurt_air": [
+  -2,
+  -100,
+  24,
+  100
+ ],
+ "push_w": 24
+}

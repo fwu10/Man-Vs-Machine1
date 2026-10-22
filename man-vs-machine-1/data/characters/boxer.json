@@ -1,0 +1,350 @@
+{
+ "name": "IRON COLE",
+ "full_name": "MARCUS 'IRON' COLE",
+ "robot": false,
+ "hit_sfx": "flesh",
+ "title": "LAST CHAMPION OF THE HUMAN LEAGUE",
+ "bio": "Undefeated heavyweight. When the leagues replaced fighters with machines, he kept training.",
+ "health": 1000,
+ "walk_fwd": 2.4,
+ "walk_back": 1.9,
+ "jump_velocity": 8.6,
+ "jump_x": 2.8,
+ "gravity": 0.45,
+ "weight": 1.0,
+ "color": "#e44a3c",
+ "attacks": {
+  "lp": {
+   "startup": 3,
+   "active": 3,
+   "recovery": 7,
+   "damage": 30,
+   "hitstun": 14,
+   "blockstun": 9,
+   "knockback": 2.2,
+   "cancel": [
+    "lp",
+    "hp",
+    "lk",
+    "c_lp",
+    "c_lk",
+    "special",
+    "super"
+   ],
+   "sfx": "punch_l",
+   "name": "JAB"
+  },
+  "hp": {
+   "startup": 6,
+   "active": 4,
+   "recovery": 15,
+   "damage": 75,
+   "hitstun": 18,
+   "blockstun": 12,
+   "knockback": 4.0,
+   "strength": "heavy",
+   "cancel": [
+    "special",
+    "super"
+   ],
+   "sfx": "punch_h",
+   "name": "CROSS"
+  },
+  "lk": {
+   "startup": 5,
+   "active": 3,
+   "recovery": 10,
+   "damage": 40,
+   "hitstun": 15,
+   "blockstun": 10,
+   "knockback": 2.6,
+   "cancel": [
+    "hk",
+    "hp",
+    "special",
+    "super"
+   ],
+   "sfx": "kick_l",
+   "name": "SNAP KICK"
+  },
+  "hk": {
+   "startup": 8,
+   "active": 4,
+   "recovery": 18,
+   "damage": 85,
+   "hitstun": 19,
+   "blockstun": 12,
+   "knockback": 4.5,
+   "strength": "heavy",
+   "sfx": "kick_h",
+   "name": "ROUNDHOUSE"
+  },
+  "c_lp": {
+   "startup": 3,
+   "active": 3,
+   "recovery": 7,
+   "damage": 25,
+   "hitstun": 14,
+   "blockstun": 9,
+   "knockback": 2.0,
+   "cancel": [
+    "c_lk",
+    "c_lp",
+    "lp",
+    "special",
+    "super"
+   ],
+   "sfx": "punch_l"
+  },
+  "c_hp": {
+   "startup": 5,
+   "active": 5,
+   "recovery": 18,
+   "damage": 70,
+   "hitstun": 17,
+   "blockstun": 11,
+   "knockback": 3.0,
+   "strength": "heavy",
+   "cancel": [
+    "special",
+    "super"
+   ],
+   "sfx": "punch_h",
+   "launch": [
+    1.5,
+    -6.0
+   ],
+   "name": "UPPERCUT"
+  },
+  "c_lk": {
+   "startup": 4,
+   "active": 3,
+   "recovery": 9,
+   "damage": 25,
+   "hitstun": 14,
+   "blockstun": 9,
+   "level": "low",
+   "knockback": 2.0,
+   "cancel": [
+    "c_lk",
+    "c_lp",
+    "lp",
+    "special",
+    "super"
+   ],
+   "sfx": "kick_l"
+  },
+  "c_hk": {
+   "startup": 7,
+   "active": 4,
+   "recovery": 22,
+   "damage": 60,
+   "hitstun": 17,
+   "blockstun": 11,
+   "level": "low",
+   "knockdown": true,
+   "launch": [
+    1.5,
+    -3.5
+   ],
+   "strength": "heavy",
+   "sfx": "kick_h",
+   "name": "SWEEP"
+  },
+  "j_p": {
+   "startup": 5,
+   "active": 6,
+   "recovery": 4,
+   "damage": 55,
+   "hitstun": 16,
+   "blockstun": 11,
+   "level": "overhead",
+   "knockback": 2.0,
+   "sfx": "punch_h"
+  },
+  "j_k": {
+   "startup": 5,
+   "active": 8,
+   "recovery": 4,
+   "damage": 65,
+   "hitstun": 17,
+   "blockstun": 11,
+   "level": "overhead",
+   "knockback": 2.4,
+   "sfx": "kick_h"
+  },
+  "sp_rush": {
+   "startup": 10,
+   "active": 8,
+   "recovery": 20,
+   "damage": 110,
+   "hitstun": 21,
+   "blockstun": 14,
+   "chip": 15,
+   "special": true,
+   "strength": "heavy",
+   "knockdown": true,
+   "launch": [
+    4.5,
+    -4.5
+   ],
+   "move": [
+    [
+     6,
+     18,
+     7.0
+    ]
+   ],
+   "hitstop": 12,
+   "shake": 5,
+   "sfx": "punch_h",
+   "name": "IRON RUSH"
+  },
+  "sp_hook": {
+   "startup": 4,
+   "active": 8,
+   "recovery": 22,
+   "damage": 100,
+   "hitstun": 20,
+   "blockstun": 13,
+   "chip": 12,
+   "special": true,
+   "strength": "heavy",
+   "knockdown": true,
+   "launch": [
+    2.2,
+    -7.5
+   ],
+   "invuln": 7,
+   "air_launch": [
+    4,
+    1.2,
+    -6.6
+   ],
+   "hitstop": 12,
+   "shake": 5,
+   "sfx": "punch_h",
+   "name": "RISING HOOK"
+  },
+  "super": {
+   "startup": 6,
+   "active": 30,
+   "recovery": 26,
+   "damage": 40,
+   "hitstun": 22,
+   "blockstun": 12,
+   "special": true,
+   "super": true,
+   "hits": 6,
+   "hit_interval": 5,
+   "knockback": 1.2,
+   "move": [
+    [
+     6,
+     30,
+     2.6
+    ]
+   ],
+   "invuln": 14,
+   "hitstop": 5,
+   "shake": 3,
+   "chip": 8,
+   "strength": "heavy",
+   "sfx": "punch_h",
+   "name": "KNOCKOUT STORM"
+  }
+ },
+ "specials": [
+  {
+   "attack": "super",
+   "motion": "DD",
+   "button": "hp"
+  },
+  {
+   "attack": "sp_rush",
+   "motion": "FF",
+   "button": "hp"
+  },
+  {
+   "attack": "sp_hook",
+   "motion": "QCF",
+   "button": "hp"
+  }
+ ],
+ "ai": {
+  "reaction": 16,
+  "aggression": 0.55,
+  "range": 60,
+  "block": 0.5,
+  "anti_air": 0.4,
+  "punish": 0.5,
+  "jump": 0.08,
+  "special": 0.2,
+  "combo": 0.5,
+  "retreat": 0.15,
+  "pause": 14,
+  "close": [
+   [
+    "lp",
+    3
+   ],
+   [
+    "c_lk",
+    2
+   ],
+   [
+    "hp",
+    1
+   ],
+   [
+    "lk",
+    1
+   ]
+  ],
+  "mid": [
+   [
+    "hk",
+    2
+   ],
+   [
+    "sp_rush",
+    1
+   ],
+   [
+    "lk",
+    2
+   ]
+  ],
+  "far_specials": [],
+  "anti_air_moves": [
+   "sp_hook",
+   "c_hp"
+  ],
+  "punish_moves": [
+   "sp_rush",
+   "hp",
+   "super"
+  ],
+  "combos": {
+   "lp": [
+    "lp",
+    "hp"
+   ],
+   "hp": [
+    "sp_rush",
+    "super"
+   ],
+   "c_lk": [
+    "c_lp",
+    "sp_rush"
+   ]
+  },
+  "jump_attack": "j_k"
+ },
+ "normals": {
+  "j_lp": "j_p",
+  "j_hp": "j_p",
+  "j_lk": "j_k",
+  "j_hk": "j_k"
+ }
+}

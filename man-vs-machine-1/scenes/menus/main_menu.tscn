@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/main_menu.gd" id="1_menu"]
+[ext_resource type="Texture2D" path="res://assets/ui/logo.png" id="2_logo"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_menu")
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Shade" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 150.0
+offset_right = 440.0
+offset_bottom = 340.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.45)
+
+[node name="Logo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 4.0
+offset_right = 530.0
+offset_bottom = 154.0
+texture = ExtResource("2_logo")
+
+[node name="MainList" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 210.0
+offset_top = 160.0
+offset_right = 430.0
+offset_bottom = 330.0
+theme_override_constants/separation = 2
+
+[node name="Footer" type="Label" parent="."]
+layout_mode = 0
+offset_top = 344.0
+offset_right = 640.0
+offset_bottom = 356.0
+text = "HIGH SCORE"
+horizontal_alignment = 1
+
+[node name="ControlsPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 40.0
+offset_right = 490.0
+offset_bottom = 340.0
+
+[node name="SettingsPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 40.0
+offset_right = 540.0
+offset_bottom = 340.0
